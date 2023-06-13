@@ -7,9 +7,10 @@
   align-items: center;
   justify-content: center;
 }
-
 .container {
   max-width: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card {
@@ -47,16 +48,15 @@ input[type="password"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #e9ecef;
-  color: #000;
+  color: #000000;
+  transition: background-color 0.3s ease; /* Add a transition for smooth background color change */
 }
 
-.password-input {
-  width: calc(100% - 32px); /* Subtract the width of the checkbox and spacing */
+input[type="password"]:read-only {
+  background-color: #e9ecef; /* Set the background color to the default value for read-only state */
+  cursor: not-allowed; /* Change the cursor to indicate the field is not editable */
 }
 
-input[type="checkbox"] {
-  margin-right: 5px;
-}
 
 button {
   display: block;
@@ -83,7 +83,3 @@ button:hover {
   margin-top: 10px;
 }
 
-.form-control {
-  width: 100%;
-  box-sizing: border-box;
-}
