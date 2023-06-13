@@ -6,9 +6,10 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent,  },
-  { path: '', redirectTo: '/signup', pathMatch: 'full' } // Redirect to the signup component by default
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' } // Redirect to the home component by default
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

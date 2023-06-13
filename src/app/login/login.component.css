@@ -1,64 +1,77 @@
+.outer-container {
+  background-image: url('https://images.unsplash.com/photo-1517963628607-235ccdd5476c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .container {
-    max-width: 400px;
-  }
-  
-  .card {
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f8f9fa;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #343a40;
-  }
-  
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #e9ecef;
-    color: #495057;
-  }
-  
-  button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    border: none;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 10px; /* Added margin-bottom to create distance */
-  }
-  
-  button:last-child {
-    margin-bottom: 0; /* Remove margin-bottom for the last button */
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  .signup-button {
-    margin-top: 10px;
-  }
-  
+  max-width: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  background-image: url("https://images.unsplash.com/photo-1544991185-13fe5d113fe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #e9ecef;
+  color: #ffffff; /* Set the text color to white */
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+button:last-child {
+  margin-bottom: 0;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.signup-button {
+  margin-top: 10px;
+}

@@ -1,17 +1,19 @@
-<div class="container mt-4">
-  <div class="card">
-    <h1>User Login</h1>
-    <form>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="email" placeholder="Enter Email">
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" id="password" placeholder="Enter Password">
-      </div>
-      <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
-      <button type="button" class="btn btn-secondary" [routerLink]="'/signup'">Sign Up</button>
-    </form>
+<div class="outer-container" style="background-image: url('https://images.unsplash.com/photo-1517963628607-235ccdd5476c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');">
+  <div class="container mt-4">
+    <div class="card">
+      <h1>Login</h1>
+      <form>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="email" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" id="password" placeholder="Enter Password">
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+        <button type="button" class="btn btn-secondary" [routerLink]="'/signup'">Sign Up</button>
+      </form>
+    </div>
   </div>
 </div>
