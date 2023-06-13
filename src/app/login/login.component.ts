@@ -11,8 +11,11 @@ import { UserService } from '../services/user.service';
 export class LoginComponent {
   email: string = '';
   password: string = '';
+  status: boolean = false;
+
 
   constructor(private router: Router, private userService: UserService) {}
+  
 
   login() {
     console.log(this.email);
@@ -24,7 +27,13 @@ export class LoginComponent {
         if (resultData.message === 'Email not exists') {
           alert('Email does not exist');
         } else if (resultData.message === 'Login Success') {
-          this.router.navigateByUrl('/home');
+          localStorage.setItem('email', this.email);
+          localStorage.setItem('password', this.password);
+          localStorage.setItem('status', JSON.stringify(this.status)); // Store status as string in local storage
+
+          this.status = true;
+
+          this.router.navigateByUrl('/dashboard');
         } else {
           alert('Incorrect Email and Password do not match');
         }
@@ -34,4 +43,10 @@ export class LoginComponent {
       }
     );
   }
+
+  togglePasswordVisibility(passwordField: HTMLInputElement) {
+    passwordField.type = passwordField.type === 'password' ? 'text' : 'password';
+  }
+  
+
 }

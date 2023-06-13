@@ -7,10 +7,9 @@
   align-items: center;
   justify-content: center;
 }
+
 .container {
   max-width: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card {
@@ -48,7 +47,15 @@ input[type="password"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #e9ecef;
-  color: #ffffff; /* Set the text color to white */
+  color: #000;
+}
+
+.password-input {
+  width: calc(100% - 32px); /* Subtract the width of the checkbox and spacing */
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
 }
 
 button {
@@ -74,4 +81,9 @@ button:hover {
 
 .signup-button {
   margin-top: 10px;
+}
+
+.form-control {
+  width: 100%;
+  box-sizing: border-box;
 }

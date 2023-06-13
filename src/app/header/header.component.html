@@ -1,0 +1,14 @@
+<div class="navbar">
+    <div class="container">
+      <a class="navbar-logo" href="#">Fitness App</a>
+      <ul class="navbar-menu">
+        <li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#">About</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#">Services</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#">Contact</a></li>
+      </ul>
+      <button *ngIf="!isLoggedIn()" type="button" class="btn btn-success" routerLink="/login">Login</button>
+       <button *ngIf="isLoggedIn()" type="button" class="btn btn-danger" (click)="logout()">Logout</button>
+    </div>
+  </div>
+  

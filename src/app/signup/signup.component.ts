@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { UserService } from '../services/user.service';
 
 @Component({
@@ -12,7 +13,7 @@ export class SignupComponent {
   password: string = '';
   errorMessage: string = '';
 
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService, private router: Router) {}
 
   save() {
     this.errorMessage = ''; // Clear the error message
@@ -26,6 +27,7 @@ export class SignupComponent {
           alert("Error occurred during employee registration");
         } else {
           alert("Employee Registered Successfully");
+          this.router.navigate(['/login']); // Redirect to the dashboard component
         }
       },
       (error: any) => {
@@ -34,6 +36,4 @@ export class SignupComponent {
       }
     );
   }
-  
-  
 }
