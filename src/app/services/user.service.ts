@@ -30,6 +30,10 @@ export class UserService {
     return this.http.post(`${this.apiUrl}/signin`, bodyData);
   }
 
-
+  logout(email: string) {
+    const bodyData = {
+      email: email
+    };
+    return this.http.post(`${this.apiUrl}/logout`, bodyData);
+  }
 }
-

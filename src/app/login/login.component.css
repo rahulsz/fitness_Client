@@ -47,15 +47,8 @@ input[type="password"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #e9ecef;
-  color: #000000;
-  transition: background-color 0.3s ease; /* Add a transition for smooth background color change */
 }
 
-input[type="password"]:read-only {
-  background-color: #e9ecef; /* Set the background color to the default value for read-only state */
-  cursor: not-allowed; /* Change the cursor to indicate the field is not editable */
-}
 
 
 button {
