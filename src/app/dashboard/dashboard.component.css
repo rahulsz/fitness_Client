@@ -1,67 +1,39 @@
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.section {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  animation: fade-in 1s ease-out;
+}
+
+.fitness-component {
+  animation: slide-in 1s ease-out;
+}
+
+.progress-bar {
+  width: 0;
+  height: 20px;
+  background-color: blue;
+  animation: progressAnimation 2s ease-out forwards;
+}
+
 @keyframes progressAnimation {
-    0% { width: 0; }
-    100% { width: 100%; }
-  }
-  
-  .progress-bar {
-    width: 0;
-    height: 20px;
-    background-color: blue;
-    animation-name: progressAnimation;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-  }
-  
-  .calorie-section {
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    animation: fade-in 1s ease-out;
-  }
-  
-  @keyframes fade-in {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  .fitness-component {
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    animation: slide-in 1s ease-out;
-  }
-  
-  @keyframes slide-in {
-    0% {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .workout-splits {
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .calisthenics {
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .calisthenics-only {
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
+  0% { width: 0; }
+  100% { width: 100%; }
+}
